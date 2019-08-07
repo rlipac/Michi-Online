@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+     position: relative;
+    left:-20px;
+    margin: 0px;
+    padding: 0px;
+    /* font: 14px "Century Gothic", Futura, sans-serif; */
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    
+    
+  }
+
+  header {
+    width: 100vw;
+    height: auto;
+  }
+  
+
+  
+  ol, ul {
+    padding-left: 30px;
+    color: rgb(26, 27, 34);
+  }
+
+  .boton-link {
+    display: inline-block;
+    padding: 2px 15px 2px 15px;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 30px;
+    background: rgb(10, 100, 10);
+    border-radius: 10px;
+   
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+   
+ 
+  }
+
+  .cuadro-michi {
+
+    display: inline-block;
+    text-align: center;
+    margin-top: 120px;
+  }
+  
+
+  .miBoton {
+    background-color: rgb(76, 105, 211);
+    margin:3px;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    
+  }
+  
+  .square {
+
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 84px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 84px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+    
+  }
+  
+  .game {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+   
+  }
+  
+  .game-info {
+    margin-left: 20px;
+ 
+  }
+
+  @media (max-width: 600px)  { 
+    
+    .mi-title {
+      font-size: 20px;
+      margin-top: 20px;
+      border:solid red px;
+    
+    }
+    .game {
+      display: flex;
+      flex-direction: column;
+        
+    }
+  }
+
+  @media (max-width: 450px) { 
+
+
+      .mi-title {
+        font-size: 16px;
+      
+
+      }
+    .game {
+      display: flex;
+      flex-direction: column;
+     
+     
+    }
+    .cuadro-michi {
+      display: inline-block;
+      text-align: center;
+      margin-top: 50px;
+      margin-left: 30px;
+      flex-direction: column;
+    }
+   
+
+
+    .square {
+
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 34px;
+      height: 50px;
+      margin-right: -1px;
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 50px;
+    }
+
+    .miBoton {
+      background-color: rgb(76, 105, 211);
+      font-size: 10px;
+      padding: 1px;
+      border-radius: 3px;
+    }
+
+ 
+  
+
+   }
+  
